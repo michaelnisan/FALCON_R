@@ -219,7 +219,7 @@ int start()
      {
          //code that only executed once a bar
       //   Direction = -1; //set direction to -1 by default in order to achieve cross!
-         OrderProfitToCSV(T_Num(MagicNumber));                        //write previous orders profit results for auto analysis in R
+         OrderProfitToCSV(T_Num());                        //write previous orders profit results for auto analysis in R
          TradeAllowed = ReadCommandFromCSV(MagicNumber);              //read command from R to make sure trading is allowed
       //   Direction = ReadAutoPrediction(MagicNumber, -1);             //get prediction from R for trade direction         
         
